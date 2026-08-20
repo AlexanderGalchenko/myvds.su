@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="520" viewBox="0 0 520 520" fill="none">
+  <title>Modular infrastructure pattern</title>
+  <rect width="520" height="520" fill="#07111D"/>
+  <defs>
+    <pattern id="grid" width="64" height="56" patternUnits="userSpaceOnUse">
+      <path d="M32 0 64 18.5 32 37 0 18.5 32 0Z" stroke="#174064" stroke-width="1"/>
+      <path d="M0 18.5v19L32 56l32-18.5v-19M32 37v19" stroke="#123453" stroke-width="1"/>
+    </pattern>
+    <linearGradient id="glow" x1="72" y1="80" x2="448" y2="448" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2DE2F2" stop-opacity=".32"/>
+      <stop offset=".55" stop-color="#2788EF" stop-opacity=".14"/>
+      <stop offset="1" stop-color="#1D48D8" stop-opacity="0"/>
+    </linearGradient>
+  </defs>
+  <rect width="520" height="520" fill="url(#grid)"/>
+  <path d="m98 142 64-37 64 37-64 37-64-37Zm64 37v74m64-111v74l-64 37-64-37v-74" stroke="#27BFEF" stroke-width="2" opacity=".65"/>
+  <path d="m294 304 64-37 64 37-64 37-64-37Zm64 37v74m64-111v74l-64 37-64-37v-74" stroke="#236FE8" stroke-width="2" opacity=".55"/>
+  <circle cx="260" cy="260" r="220" fill="url(#glow)"/>
+</svg>
