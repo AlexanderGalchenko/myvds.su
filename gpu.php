@@ -1,3 +1,3 @@
 <?php
-header('Location: /#plans', true, 301);
+header('Location: https://ikubit.ru/gpu/', true, 301);
 exit;

@@ -1,3 +1,3 @@
 <?php
-header('Location: /#request', true, 301);
+header('Location: https://ikubit.ru/contacts/', true, 301);
 exit;

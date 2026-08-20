@@ -1,3 +1,3 @@
 <?php
-header('Location: /#plans', true, 301);
+header('Location: https://lk.ikubit.ru/services/vps', true, 301);
 exit;

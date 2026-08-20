@@ -1,3 +1,3 @@
 <?php
-header('Location: /#advantages', true, 301);
+header('Location: /#datacenter', true, 301);
 exit;
