@@ -48,8 +48,10 @@ bash deploy/web-gw-update.sh
 Создайте файл один раз и назначьте владельцем UID/GID процесса PHP-FPM. Для стандартного `www-data` это обычно `33:33`:
 
 ```bash
-install -o 33 -g 33 -m 0660 /dev/null \
-  /docker/web-gw/www/html/storage/myvds-leads.ndjson
+mkdir -p /docker/web-gw/www/html/storage
+touch /docker/web-gw/www/html/storage/myvds-leads.ndjson
+chown 33:33 /docker/web-gw/www/html/storage/myvds-leads.ndjson
+chmod 0660 /docker/web-gw/www/html/storage/myvds-leads.ndjson
 ```
 
 Если PHP-FPM работает под другим пользователем, подставьте его UID/GID.
