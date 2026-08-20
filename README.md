@@ -26,6 +26,10 @@ git clone https://github.com/AlexanderGalchenko/myvds.su.git \
 cd /docker/web-gw/repos/myvds.su
 bash deploy/web-gw-update.sh --dry-run
 bash deploy/web-gw-update.sh
+
+# Необязательно: короткая команда рядом с остальными gitpull-скриптами
+ln -sfn /docker/web-gw/repos/myvds.su/deploy/web-gw-update.sh \
+  /docker/web-gw/www/html/gitpull-myvds.su.sh
 ```
 
 Скрипт:
@@ -41,6 +45,10 @@ bash deploy/web-gw-update.sh
 cd /docker/web-gw/repos/myvds.su
 bash deploy/web-gw-update.sh --dry-run
 bash deploy/web-gw-update.sh
+
+# Или через созданную ссылку:
+/docker/web-gw/www/html/gitpull-myvds.su.sh --dry-run
+/docker/web-gw/www/html/gitpull-myvds.su.sh
 ```
 
 ## Подготовка файла заявок

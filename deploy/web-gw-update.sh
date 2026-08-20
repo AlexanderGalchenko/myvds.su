@@ -13,7 +13,8 @@ case "${1:-}" in
   *) usage >&2; exit 2 ;;
 esac
 
-REPO_DIR="$(cd -- "$(dirname -- "${BASH_SOURCE[0]}")/.." && pwd)"
+SCRIPT_PATH="$(readlink -f -- "${BASH_SOURCE[0]}")"
+REPO_DIR="$(cd -- "$(dirname -- "$SCRIPT_PATH")/.." && pwd)"
 WEBROOT="${MYVDS_WEBROOT:-/docker/web-gw/www/html}"
 SITE_DIR="$WEBROOT/myvds.su"
 BACKUP_ROOT="$WEBROOT/backup "
